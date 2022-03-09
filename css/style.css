@@ -1,0 +1,135 @@
+body[class='light-mode'] {
+  --primary: #2787ff;
+  --secondary: #f2f2f2;
+  --text-primary: #000;
+  --text-secondary: #1d1d1d;
+  --background: #fff;
+  --background-secondary: #f2f2f2;
+  background: var(--background) center center no-repeat
+    url('../assets/img/bg_light.svg');
+  overflow-x: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body[class='dark-mode'] {
+  --primary: #2787ff;
+  --secondary: #f2f2f2;
+  --text-primary: #ffffff;
+  --text-secondary: #606f87;
+  --background: #171d26;
+  --background-secondary: #1f2630;
+  background: var(--background) center center no-repeat
+    url('../assets/img/bg.svg');
+  overflow-x: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: var(--text-primary);
+}
+
+.wave {
+  z-index: -10;
+}
+
+.wave svg {
+  width: 100%;
+  height: auto;
+  fill: var(--primary);
+}
+
+/* 
+ * Nav
+ */
+
+nav {
+  margin-top: 2.5rem;
+}
+
+nav .button {
+  background-color: var(--primary);
+}
+
+nav .button:hover {
+  border-radius: 25px;
+}
+
+/* 
+ * Header
+ */
+
+.header {
+  text-align: center;
+  z-index: 100;
+  width: 100%;
+  height: 300px;
+  padding-top: 200px;
+}
+
+.header .title {
+  color: var(--text-primary);
+  font-size: 80px;
+  margin: 0;
+}
+
+.header .subtitle {
+  color: var(--text-secondary);
+  padding: 5px 0 50px 0;
+}
+
+/* 
+ * Content
+ */
+
+.content {
+  background-color: var(--background);
+}
+
+/* 
+ * Footer
+ */
+
+.footer {
+  z-index: 1000;
+  background-color: var(--background);
+  width: 100%;
+  height: 20rem;
+  font-size: 1.5rem;
+}
+
+.footer .icon {
+  font-size: 2.5rem;
+}
+
+.footer .content p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.footer .wave {
+  z-index: 1000;
+  left: 0px;
+  bottom: 0px;
+  position: sticky;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  display: inline-block;
+}
+
+.footer .wave svg {
+  fill: var(--background-secondary);
+}
+
+.footer .content {
+  background-color: var(--background-secondary);
+  text-align: center;
+  padding: 10rem;
+}
+.footer .content {
+  margin: 0;
+}
