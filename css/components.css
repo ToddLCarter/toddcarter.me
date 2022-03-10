@@ -6,6 +6,18 @@
   background-color: var(--background);
 }
 
+.bg-secondary-colour {
+  background-color: var(--background-secondary);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
 /* 
  * Column
  */
@@ -52,6 +64,10 @@ a:hover {
   width: 75%;
   float: left;
 }
+.column-25 {
+  width: 25%;
+  float: left;
+}
 
 /* 
  * Button
@@ -82,12 +98,122 @@ a:hover {
   color: var(--text-primary);
 }
 
+.button-secondary {
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  align-items: center;
+
+  border-style: solid;
+  border-radius: 7px;
+  border-width: 2px;
+  border-color: var(--text-secondary);
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 13;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  transition-property: all;
+}
+
+.button-secondary:hover {
+  background-color: var(--text-secondary);
+  color: var(--text-primary);
+}
+
 /* 
-   * Separator
-   */
+ * Separator
+ */
 
 .separator {
   background-color: var(--primary);
   height: 10rem;
   width: 100%;
+}
+
+/* 
+ * Card
+ */
+
+.card {
+  width: 46%;
+  margin: 4px;
+  float: left;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.card .card-body {
+}
+
+.card .card-image {
+  color: var(--text-primary);
+  background-color: var(--card-primary);
+
+  height: 7.5rem;
+
+  border-radius: 7px 7px 0 0;
+}
+
+.card .card-content {
+  background-color: var(--background-secondary);
+  padding: 1.5rem;
+  padding-bottom: 3.5rem;
+  border-radius: 0 0 7px 7px;
+}
+
+.card .card-content p {
+  margin-bottom: 3rem;
+}
+
+.cards-footer {
+  margin-top: -4.5rem;
+}
+
+.cards-title {
+  margin-bottom: 2.5rem;
+  font-size: 45;
+}
+
+/* 
+ * Container
+ */
+
+.container-25 {
+  padding: 0 25% 0 25%;
+}
+
+.container-15 {
+  padding: 0 15% 0 15%;
+  height: 100%;
+}
+
+/* 
+ * Positioning
+ */
+
+.centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+ * Navbar
+ */
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin: 0;
+}
+
+.navbar li:not(:last-child) {
+  margin-right: 1.5rem;
 }
