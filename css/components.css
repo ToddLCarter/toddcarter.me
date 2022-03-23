@@ -225,3 +225,50 @@ a:hover {
 .navbar li:not(:last-child) {
   margin-right: 1.5rem;
 }
+
+/* 
+ * Display Size Support
+ */
+
+@media (max-width: 768px) {
+  .container-25 {
+    padding: 0 5% 0 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-25 {
+    padding: 0 10% 0 10%;
+  }
+  .container-15 {
+    padding: 0 5% 0 5%;
+  }
+
+  nav .column-75 {
+    width: 0;
+  }
+
+  nav .navbar {
+    float: right;
+  }
+
+  .header {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cards-footer {
+    margin-top: 42.5rem;
+  }
+
+  .footer .content {
+    padding: 0;
+    padding-top: 5rem;
+    height: 100%;
+  }
+}
