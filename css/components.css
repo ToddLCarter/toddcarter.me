@@ -138,6 +138,11 @@ a:hover {
  * Card
  */
 
+.cards {
+  width: 100%;
+  height: 100%;
+}
+
 .card {
   width: 46%;
   margin: 4px;
@@ -178,7 +183,7 @@ a:hover {
 }
 
 .cards-footer {
-  margin-top: -4.5rem;
+  margin-top: -11rem;
 }
 
 .cards-title {
@@ -253,13 +258,23 @@ a:hover {
   }
 
   .header {
-    padding-top: 150px;
+    padding-top: 213px;
     padding-bottom: 50px;
+  }
+
+  .header .title {
+    font-size: 55px;
+  }
+
+  .header .subtitle {
+    padding: 0 10px 20px 8px;
+    font-size: 25px;
   }
 
   .card {
     width: 100%;
     margin: 0;
+    margin-bottom: 1rem;
   }
 
   .cards-footer {
@@ -272,3 +287,7 @@ a:hover {
     height: 100%;
   }
 }
+
+/*
+ * List
+ */

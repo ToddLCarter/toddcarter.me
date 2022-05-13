@@ -187,3 +187,47 @@ nav .button:hover {
 .lightmode-toggle:hover {
   color: var(--text-primary);
 }
+
+/*
+ * Skills
+ */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 175px;
+  row-gap: 0.5rem;
+  column-gap: 25%;
+  color: var(--text-secondary);
+  list-style: none;
+}
+
+.skills > .skill {
+  color: var(--text-primary);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.skills > .skill::before {
+  content: "\2022";
+  color: var(--text-secondary);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1.5em;
+  margin-left: -1em;
+}
+
+.skill > .experience {
+  margin-left: 30px;
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  background: var(--background);
+  padding: 0 5px;
+  border-radius: 2px;
+  
+  user-select: none;
+}
