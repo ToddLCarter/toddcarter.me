@@ -1,0 +1,10 @@
+.container > * {
+    transition: all 0.75s;
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  
+  .container > *.in-viewport {
+    transform: translateY(0);
+    opacity: 1;
+  }

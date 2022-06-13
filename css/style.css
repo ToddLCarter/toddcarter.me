@@ -1,4 +1,4 @@
-body[class='light-mode'] {
+body[class*='light-mode'] {
   --primary: #569df7;
   --secondary: #f2f2f2;
   --text-primary: #000;
@@ -14,7 +14,7 @@ body[class='light-mode'] {
   background-attachment: fixed;
 }
 
-body[class='dark-mode'] {
+body[class*='dark-mode'] {
   --primary: #2787ff;
   --secondary: #f2f2f2;
   --text-primary: #ffffff;
@@ -192,16 +192,22 @@ nav .button:hover {
  * Skills
  */
 
+.skills-container {
+  margin-top: 5rem;
+}
+ 
 .skills {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   height: 175px;
   row-gap: 0.5rem;
-  column-gap: 25%;
+  column-gap: 5%;
   color: var(--text-secondary);
   list-style: none;
+  padding-left: 0;
 }
 
 .skills > .skill {
@@ -217,6 +223,7 @@ nav .button:hover {
   display: inline-block; 
   width: 1.5em;
   margin-left: -1em;
+  padding-left: 1.5em;
 }
 
 .skill > .experience {
